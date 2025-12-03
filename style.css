@@ -23,6 +23,11 @@ body {
 	box-sizing: border-box; /* important fix */
 }
 
+.logo{
+	heightight: 100px;
+	width: 100px;
+}
+
 .NavPages {
     display: flex;
     gap: 25px;          /* space between links */
