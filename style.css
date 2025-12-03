@@ -6,33 +6,42 @@ body {
 }
 
 .NavBar{
-	height: 100px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+}	
+	
+.NavTop{
+	height: 50px;
 	width: 100%;
 	padding:10px;
 	border:2px solid transparent;
 	position: fixed;
 	top: 0;         
     left: 0;
-	background-color: #1468a2;
+	background-color: #4A90E2;
 	
     display: flex;
     justify-content: space-between;
     align-items: center;
-	z-index: 9999;
+	z-index: 9998;
 	
 	box-sizing: border-box; /* important fix */
 }
 
 .logo{
-	heightight: 100px;
-	width: 100px;
+	position: absolute;
+	margin: 10px;
+	width: 90px;
+	z-index: 9999;
 }
 
 .NavPages {
     display: flex;
     gap: 25px;          /* space between links */
+	margin-top: 20px;
     margin-left: auto;  /* push links to the right */
-    margin-right: 30px; /* fixed distance from the right edge */
+    margin-right: 50px; /* fixed distance from the right edge */
 }
 
 .NavPages a {
@@ -48,4 +57,14 @@ body {
 .NavPages a:hover {
     color: #ffdd57;               /* highlight color */
     transition: 0.3s;             /* smooth transition */
+}
+
+.NavWave{
+  background: #4A90E2;			/*alt color #4A90E2, #1468a2*/
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  clip-path: path("M0,0 L0,50 Q200,80 400,50 T800,50 T1200,50 T1440,0 L1440,0 Z");
+margin-top: 50px;
 }
