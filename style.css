@@ -36,6 +36,15 @@ body {
 	z-index: 9999;
 }
 
+.NavBar h1{
+	position: absolute;
+	margin: 10px;
+	z-index: 9999;
+	top: 35px;
+	left: 100px;
+	color: white;
+}
+
 .NavPages {
     display: flex;
     gap: 25px;          /* space between links */
@@ -59,12 +68,253 @@ body {
     transition: 0.3s;             /* smooth transition */
 }
 
+.icon{
+	height:25px;
+}
+
 .NavWave{
   background: #4A90E2;			/*alt color #4A90E2, #1468a2*/
   height: 150px;
+  width: 100%;
   padding: 20px;
   color: white;
   text-align: center;
   clip-path: path("M0,0 L0,50 Q200,80 400,50 T800,50 T1200,50 T1440,0 L1440,0 Z");
 margin-top: 50px;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+
+.hero-photo {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    animation: float 3s infinite ease-in-out;
+}
+
+
+.hero h2 {
+    font-size: 50px;
+    color: #1b3b5f;
+}
+
+.hero h2 span {
+    color: #4A90E2;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #4A90E2;
+    padding: 12px 30px;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* ABOUT SECTION */
+.about {
+    text-align: center;
+    padding: 80px;
+}
+
+.about-box {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* SKILLS */
+.skills {
+    background: #d9eaff;
+    text-align: center;
+    padding: 70px;
+}
+
+.skill-list {
+    max-width: 600px;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill p {
+    margin: 0;
+}
+
+.bar {
+    width: 100%;
+    height: 10px;
+    background: #b8cff1;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.bar div {
+    height: 100%;
+    background: #4A90E2;
+    border-radius: 5px;
+}
+
+/* PROJECTS */
+.projects {
+    text-align: center;
+    padding: 80px 50px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 80px;
+    background: #d9eaff;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 20px;
+    display: grid;
+    gap: 15px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #4A90E2;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4A90E2;
+    color: white;
+    margin-top: 50px;
+}
+
+/* HERO EXTRA TAGS */
+.hero-tags {
+    margin-top: 15px;
+}
+
+.hero-tags span {
+    background: #dceaff;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* ABOUT EXTRA SECTIONS */
+.subheader {
+    margin-top: 20px;
+    color: #4A90E2;
+}
+
+.bullet-list {
+    margin: 10px 0 0 20px;
+}
+
+.bullet-list li {
+    margin-bottom: 6px;
+}
+
+/* SOFT SKILLS */
+.soft-skill-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.soft-skill-list li {
+    background: #bcd6ff;
+    width: fit-content;
+    margin: 8px auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* EXPERIENCE SECTION */
+.experience {
+    padding: 80px;
+    text-align: center;
+}
+
+.exp-box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.exp-item {
+    background: white;
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
 }
